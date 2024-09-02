@@ -1,4 +1,3 @@
-from typing import List, Any
 
 my_list = [42, 69, 322, 13, 0, 99, -5, 9, 8, 7, -6, 5]
 len_my_list = len(my_list) - 1
