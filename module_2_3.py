@@ -5,6 +5,9 @@ i = 0
 while i <= len_my_list:
     if my_list[i] < 0:
         break
+    elif my_list[i] == 0:
+        i = i + 1
+        continue
     else:
         print(my_list[i])
     i = i + 1
