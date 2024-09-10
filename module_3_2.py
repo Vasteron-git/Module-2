@@ -7,12 +7,11 @@ def send_email(message, recipient, *, sender = "university.help@gmail.com"):
     if sender != "university.help@gmail.com":
         nestandrt = "НЕСТАНДАРТНЫЙ ОТПРАВИТЕЛЬ! " + nestandrt
     var_domen=[".com", ".ru", ".net"]
-    f1 = False
-    f2 = False
+    f1 = f2 = False
     for i in var_domen:
         if i in recipient: f1 = True
         if i in sender: f2 = True
-    if f1 == True and f2 == True and "@" in recipient and "@" in sender:
+    if f1 == f2 == True and "@" in recipient and "@" in sender:
         print(nestandrt, sender, "на адрес", recipient)
     else:
         print("Невозможно отправить письмо с адреса", sender, "на адрес", recipient)
